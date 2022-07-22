@@ -26,7 +26,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="submit" class="btn btn-primary save">Editar Carrusel</button>
+                <button type="submit" class="btn btn-primary save">Cargar</button>
             </div>
             </form>
         </div>
