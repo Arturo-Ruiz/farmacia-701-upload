@@ -19,7 +19,7 @@ class CarouselsController extends Controller
     public function store(Request $request){
         $file = $request->file('file');
 
-        $path = public_path() . '\carousel' . '\\';
+        $path = public_path() . '/carousel' . '/';
         
         $fileName = $file->getClientOriginalName();
     
@@ -55,7 +55,7 @@ class CarouselsController extends Controller
     {
         $file = $request->file('file');
 
-        $path = public_path() . '\carousel' . '\\';
+        $path = public_path() . '/carousel' . '/';
         
         $fileName = $file->getClientOriginalName();
     

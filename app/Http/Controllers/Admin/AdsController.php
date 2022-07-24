@@ -19,7 +19,7 @@ class AdsController extends Controller
     public function store(Request $request){
         $file = $request->file('file');
 
-        $path = public_path() . '\ads' . '\\';
+        $path = public_path() . '/ads' . '/';
         
         $fileName = $file->getClientOriginalName();
     
@@ -57,7 +57,7 @@ class AdsController extends Controller
     {
         $file = $request->file('file');
 
-        $path = public_path() . '\ads' . '\\';
+        $path = public_path() . '/ads' . '/';
         
         $fileName = $file->getClientOriginalName();
     
