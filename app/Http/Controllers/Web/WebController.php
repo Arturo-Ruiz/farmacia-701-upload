@@ -38,7 +38,7 @@ class WebController extends Controller
 
         $carousels = Carousel::orderBy('id', 'asc')->get();
 
-        return view("home.index", compact("products", "ads", "dayrate", "carousels"));
+        return view("Home.index", compact("products", "ads", "dayrate", "carousels"));
     }
 
 
@@ -54,7 +54,7 @@ class WebController extends Controller
 
         $carousels = Carousel::orderBy('id', 'asc')->get();
 
-        return view("home.dollars.index", compact("products", "ads", "dayrate", "carousels"));
+        return view("Home.dollars.index", compact("products", "ads", "dayrate", "carousels"));
     }
 
     public function pagination(){
@@ -62,7 +62,7 @@ class WebController extends Controller
         $products = Product::where('stock', '>=', 1)
                     ->orderBy('category_id', 'asc')
                     ->paginate(15);
-        return view('home.products.pagination', compact('products', "dayrate"));
+        return view('Home.products.pagination', compact('products', "dayrate"));
     }
 
     public function pagination_dollars(){
@@ -70,7 +70,7 @@ class WebController extends Controller
         $products = Product::where('stock', '>=', 1)
                     ->orderBy('category_id', 'asc')
                     ->paginate(15);
-        return view('home.dollars.products.pagination', compact('products', "dayrate"));
+        return view('Home.dollars.products.pagination', compact('products', "dayrate"));
     }
 
     public function search(Request $request){
@@ -82,7 +82,7 @@ class WebController extends Controller
                             ->get();
         $dayrate = DayRate::find(1);
         $ads = Ad::orderBy('id', 'asc')->get();
-        return view("home.search", compact("products", "ads", "dayrate", "value", "carousels"));
+        return view("Home.search", compact("products", "ads", "dayrate", "value", "carousels"));
     }
 
     public function search_dollars(Request $request){
@@ -93,15 +93,15 @@ class WebController extends Controller
                             ->where('name', 'LIKE', "%$value%")->get();
         $dayrate = DayRate::find(1);
         $ads = Ad::orderBy('id', 'asc')->get();
-        return view("home.dollars.search", compact("products", "ads", "dayrate", "value", "carousels"));
+        return view("Home.dollars.search", compact("products", "ads", "dayrate", "value", "carousels"));
     }
 
     public function cart(){
-        return view("home.cart");
+        return view("Home.cart");
     }
 
     public function cart_dollars(){
-        return view("home.dollars.cart");
+        return view("Home.dollars.cart");
     }
 
     public function cartSave(Request $request){
@@ -132,7 +132,7 @@ class WebController extends Controller
 
         $msg = "*Nombre* : " . $request->name . ", *Email* : " . $request->email . ", *Dirección* : " . $request->address . ", *Método de entrega* : " . $request->metodo_entrega . ", *Método de pago* : " . $request->paymentMethod . " " . $msg_productos . ", *Total* : ". $request->total . " Bs, Y Los productos que me gustaria que tuvieran disponibles son : " . $request->solicitud ;
 
-        return view("home.whatsapp", compact("msg"));
+        return view("Home.whatsapp", compact("msg"));
     }
 
     public function cartSaveDollars(Request $request){
@@ -163,7 +163,7 @@ class WebController extends Controller
 
         $msg = "*Nombre* : " . $request->name . ", *Email* : " . $request->email . ", *Dirección* : " . $request->address . ", *Método de entrega* : " . $request->metodo_entrega . ", *Método de pago* : " . $request->paymentMethod . " " . $msg_productos . ", *Total* : ". $request->total . " $, Y Los productos que me gustaria que tuvieran disponibles son : " . $request->solicitud ;
 
-        return view("home.whatsapp", compact("msg"));
+        return view("Home.whatsapp", compact("msg"));
     }
 }
 
