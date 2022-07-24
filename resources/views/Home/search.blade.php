@@ -162,6 +162,7 @@
 </body>
 
 </html>
+
 <script>
     let products = 2;
 
