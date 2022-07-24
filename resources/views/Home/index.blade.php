@@ -130,7 +130,7 @@
         <!-- Line -->
         <div id="prueba" class="row justify-content-center product__container">
 
-            @include('home.products.pagination')
+            @include('Home.products.pagination')
 
         </div>
 
