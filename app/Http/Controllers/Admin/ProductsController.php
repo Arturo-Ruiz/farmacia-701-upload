@@ -54,7 +54,7 @@ class ProductsController extends Controller
     public function upload(Request $request){
         $file = $request->file('file');
 
-        $path = public_path() . '\products' . '\\';
+        $path = public_path() . '/products' . '/';
         
         $fileName = $file->getClientOriginalName();
     
