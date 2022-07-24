@@ -79,7 +79,7 @@
                 <ul class="navbar-nav mb-md-3">
                     <li class="nav-item">
                         <a class="nav-link active active-pro"
-                            href="https://api.whatsapp.com/send?phone=584127618486&text=Hola%20Arturo%2C%20El%20sistema%20necesita%20mantenimiento%20urgentemente!%20">
+                            href="https://api.whatsapp.com/send?phone=584128620300&text=Hola%2C%20Henry%20el%20sistema%20necesita%20mantenimiento">
                             <i class="ni ni-support-16 text-dark"></i>
                             <span class="nav-link-text">Soporte Tecnico</span>
                         </a>
