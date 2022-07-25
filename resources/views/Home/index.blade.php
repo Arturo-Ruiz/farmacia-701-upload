@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="{{ asset('img\favicon.png') }}">
+    <meta name="description" content="Farmacia 701 ubicada en Ciudad Bolívar, Venezuela">
+    <meta name="keywords" content="Medicina, farmacia, médico, medicamentos, salud, remedio">
+    <meta name="author" content="Arturo Ruiz & Henry Silva">
     <link rel="stylesheet" href="{{ asset('recursos/bootstrap-5/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('recursos/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('recursos/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css') }}" />
@@ -21,14 +24,15 @@
 
     <header class="navbar navbar-light sticky-top bg-light  shadow py-3">
         <nav class="container">
-            <a class="navbar-brand " href="{{route('inicio')}}">
+            <a class="navbar-brand " href="{{ route('inicio') }}">
                 <img src="img\logo.png" alt="" width="50" height="50" />
             </a>
 
             <div class="d-flex align-items-center col-7 justify-content-center">
                 <input id="input_search" class="form-control form-control-dark input__search " type="text"
                     placeholder="Busca tu producto aqui" aria-label="Search" />
-                <a href="#" id="search" class="btn button__blue button__search search"><i class="fa-solid fa-search"></i></a>
+                <a href="#" id="search" class="btn button__blue button__search search"><i
+                        class="fa-solid fa-search"></i></a>
             </div>
 
             <div class="navbar-nav cart__icon">
@@ -40,9 +44,10 @@
             </div>
 
             <div class="form-check form-switch d-flex flex-column" style="padding: 0;">
-                <img src="{{ asset('img\venezuela.png') }}" class="img-fluid usa" style="width: 25px;" alt="bandera usa">
-                <input id="dollars" class="form-check-input switch" style="width: 30px; " type="checkbox" role="switch"
-                    id="flexSwitchCheck2">
+                <img src="{{ asset('img\venezuela.png') }}" class="img-fluid usa" style="width: 25px;"
+                    alt="bandera usa">
+                <input id="dollars" class="form-check-input switch" style="width: 30px; " type="checkbox"
+                    role="switch" id="flexSwitchCheck2">
                 <label class="form-check-label text-primary mx-1" for="flexSwitchCheck2">
                     <span>
                         Bs {{ $dayrate->value }}
@@ -81,11 +86,11 @@
         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 @foreach ($carousels as $carousel)
-                <div class="carousel-item active">
-                    <!--data-bs-interval="2000"-->
-                        <img src="{{ asset('carousel\\' . $carousel->img) }}" class=" d-flex w-100 img-fluid"
-                            alt="imagen de carrusel numero uno">
-                </div>
+                    <div class="carousel-item active">
+                        <!--data-bs-interval="2000"-->
+                            <img src="{{ asset('carousel\\' . $carousel->img) }}" class=" d-flex w-100 img-fluid"
+                                alt="imagen de carrusel numero uno">
+                    </div>
                 @endforeach
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -220,21 +225,16 @@
 
     const dollars = document.querySelector("#dollars");
     dollars.addEventListener("click", (e) => {
-         
+
         e.preventDefault();
 
         sessionStorage.clear();
 
-        location.href = "{{url('api/dollars')}}";
+        location.href = "{{ url('api/dollars') }}";
     })
-    
 </script>
 <script>
-
-
-
-
-    $(document).ready(function () {
+    $(document).ready(function() {
         $(".owl-carousel").owlCarousel({
             items: 4,
             loop: true,
@@ -248,26 +248,25 @@
 
         // filter__button.addEventListener("click", function () {
         //     document.querySelector("body").classList.remove("active");
-            
+
         // })
 
 
-            let anuncio = document.querySelector("body");
+        let anuncio = document.querySelector("body");
 
-        anuncio.addEventListener("click", function () {
+        anuncio.addEventListener("click", function() {
             document.querySelector("body").classList.remove("anuncio");
-            
+
         })
- 
+
     })
 
-        const quitar_ad = () => {
-            document.querySelector("body").classList.remove("delivery");
-        }
+    const quitar_ad = () => {
+        document.querySelector("body").classList.remove("delivery");
+    }
 
 
-  
+
     // // Al iniciar inserta en la tabla lo que haya en sessionStorage por si acaso
     addEventListener('DOMContentLoaded', itemsCount);
-
 </script>

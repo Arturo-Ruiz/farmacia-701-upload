@@ -92,6 +92,13 @@
                         </div>
 
                         <div class="col-12">
+                            <label for="phone" class="form-label">Teléfono <span
+                                    class="text-muted">(Opcional)</span></label>
+                            <input type="phone" class="form-control" id="phone"  name="phone"
+                                placeholder="Coloca el Teléfono de la persona que retira o recibira el producto">
+                        </div>
+
+                        <div class="col-12">
                             <label for="address" class="form-label">Direccion de envío</label>
                             <input type="text" name="address" class="form-control" id="address"
                                 placeholder="En caso de solicitar delivery" required="">

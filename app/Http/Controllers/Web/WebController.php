@@ -130,7 +130,8 @@ class WebController extends Controller
             $msg_productos = " " . $msg_productos . "" . $product->nombre . ", Cantidad: " . $product->cantidad . " ; ";            
         }
 
-        $msg = "*Nombre* : " . $request->name . ", *Email* : " . $request->email . ", *Dirección* : " . $request->address . ", *Método de entrega* : " . $request->metodo_entrega . ", *Método de pago* : " . $request->paymentMethod . " " . $msg_productos . ", *Total* : ". $request->total . " Bs, Y Los productos que me gustaria que tuvieran disponibles son : " . $request->solicitud ;
+        $msg = "*Nombre* : " . $request->name . ", *Email* : " . $request->email . ", *Teléfono* : " . $request->phone . ", *Dirección* : " . $request->address . ", *Método de entrega* : " . $request->metodo_entrega . ", *Método de pago* : " . $request->paymentMethod . " " . $msg_productos . ", *Total* : ". $request->total . " $, Y Los productos que me gustaria que tuvieran disponibles son : " . $request->solicitud ;
+
 
         return view("Home.whatsapp", compact("msg"));
     }
@@ -161,7 +162,7 @@ class WebController extends Controller
             $msg_productos = " " . $msg_productos . "" . $product->nombre . ", Cantidad: " . $product->cantidad . " ; ";            
         }
 
-        $msg = "*Nombre* : " . $request->name . ", *Email* : " . $request->email . ", *Dirección* : " . $request->address . ", *Método de entrega* : " . $request->metodo_entrega . ", *Método de pago* : " . $request->paymentMethod . " " . $msg_productos . ", *Total* : ". $request->total . " $, Y Los productos que me gustaria que tuvieran disponibles son : " . $request->solicitud ;
+        $msg = "*Nombre* : " . $request->name . ", *Email* : " . $request->email . ", *Teléfono* : " . $request->phone . ", *Dirección* : " . $request->address . ", *Método de entrega* : " . $request->metodo_entrega . ", *Método de pago* : " . $request->paymentMethod . " " . $msg_productos . ", *Total* : ". $request->total . " $, Y Los productos que me gustaria que tuvieran disponibles son : " . $request->solicitud ;
 
         return view("Home.whatsapp", compact("msg"));
     }
