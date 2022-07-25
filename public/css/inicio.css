@@ -312,8 +312,8 @@ body.delivery .anuncio_collapse .delivery_gratis{
     margin: 10px 5px 10px 5px;
     max-width: 180px;
     min-height: 310.39px;
-    border: none !important; 
-    max-height: 310.40px;   
+    max-height: 310.40px;
+    border: none !important;    
 }
 
 .img__container{

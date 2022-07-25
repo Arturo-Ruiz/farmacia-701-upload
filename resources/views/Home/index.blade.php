@@ -15,7 +15,7 @@
     <title>Farmacia 701</title>
 </head>
 
-<body class="active bg-light">
+<body class="active anuncio delivery bg-light">
 
     <!-- nav bar  -->
 
@@ -40,7 +40,7 @@
             </div>
 
             <div class="form-check form-switch d-flex flex-column" style="padding: 0;">
-                <img src="{{ asset('img\usa.png') }}" class="img-fluid usa" style="width: 25px;" alt="bandera usa">
+                <img src="{{ asset('img\venezuela.png') }}" class="img-fluid usa" style="width: 25px;" alt="bandera usa">
                 <input id="dollars" class="form-check-input switch" style="width: 30px; " type="checkbox" role="switch"
                     id="flexSwitchCheck2">
                 <label class="form-check-label text-primary mx-1" for="flexSwitchCheck2">
@@ -52,6 +52,26 @@
 
         </nav>
     </header>
+
+
+    <section class="anuncio_collapse">
+        <div class="sidebar">
+            <p class="text-center h6 text-primary text-uppercase fw-bold">Prueba nuestro buscador</p>
+            <p class=" mx-4 text-secondary">Haz tu búsqueda por alfabeto, nombre o componente activo</p>
+        </div>
+
+        <div class="delivery_gratis">
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn-close p-2 h6" onclick="quitar_ad()"></button>
+            </div>
+            <div class="oferta text-center">
+                <p class="h4 text-uppercase text-light fw-bold">Envio gratis</p>
+                <span class="text-white fs-1"><i class="fa-solid fa-truck-fast"></i></span>
+                <p class="text-dark">Para compras +10$</p>
+                <p class="text-dark">en Ciudad Bolívar</p>
+            </div>
+        </div>
+    </section>
 
 
     <!-- carousel intro  -->
@@ -210,7 +230,11 @@
     
 </script>
 <script>
-    $(document).ready(function() {
+
+
+
+
+    $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
             items: 4,
             loop: true,
@@ -220,18 +244,30 @@
             autoplayHoverPause: true
         });
 
-        let filter__button = document.querySelector(".filter__button");
+        // let filter__button = document.querySelector(".filter_collapse");
 
-        filter__button.addEventListener("click", function() {
-            document.querySelector("body").classList.toggle("active");
+        // filter__button.addEventListener("click", function () {
+        //     document.querySelector("body").classList.remove("active");
+            
+        // })
+
+
+            let anuncio = document.querySelector("body");
+
+        anuncio.addEventListener("click", function () {
+            document.querySelector("body").classList.remove("anuncio");
+            
         })
-
+ 
     })
 
+        const quitar_ad = () => {
+            document.querySelector("body").classList.remove("delivery");
+        }
 
 
-
-    //     
+  
     // // Al iniciar inserta en la tabla lo que haya en sessionStorage por si acaso
     addEventListener('DOMContentLoaded', itemsCount);
+
 </script>
