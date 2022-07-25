@@ -240,18 +240,29 @@
             autoplayHoverPause: true
         });
 
-        let filter__button = document.querySelector(".filter__button");
+        // let filter__button = document.querySelector(".filter_collapse");
 
-        filter__button.addEventListener("click", function() {
-            document.querySelector("body").classList.toggle("active");
+        // filter__button.addEventListener("click", function () {
+        //     document.querySelector("body").classList.remove("active");
+
+        // })
+
+
+        let anuncio = document.querySelector("body");
+
+        anuncio.addEventListener("click", function() {
+            document.querySelector("body").classList.remove("anuncio");
+
         })
 
     })
 
+    const quitar_ad = () => {
+        document.querySelector("body").classList.remove("delivery");
+    }
 
 
 
-    //     
     // // Al iniciar inserta en la tabla lo que haya en sessionStorage por si acaso
     addEventListener('DOMContentLoaded', itemsCount);
 </script>
