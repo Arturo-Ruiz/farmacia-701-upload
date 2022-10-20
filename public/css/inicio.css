@@ -24,35 +24,35 @@
 
 @import url(checkout.css);
 
-:root{
+:root {
     --color__primary: #0077cc;
     --color__fucsia: #ff146edf;
     --color__green: #6dc72e;
-    --color__orange: #ffa207; 
-    
+    --color__orange: #ffa207;
+
 }
 
-body{
+body {
     font-family: sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.btn-outline-primary{
+.btn-outline-primary {
     color: var(--color__primary);
     border: var(--color__primary) solid 1px;
     padding: 2px 0;
 }
 
-.btn-outline-primary:hover{
+.btn-outline-primary:hover {
     color: #fff;
     border: var(--color__primary) solid 1px;
     background-color: var(--color__primary);
 }
 
-.btn-primary{
+.btn-primary {
     color: #fff;
     background-color: var(--color__primary);
     border: var(--color__primary) solid 1px;
@@ -67,39 +67,39 @@ a{
         1-Header  
 **********************/
 
-.button__blue{
+.button__blue {
     color: #fff;
     background-color: var(--color__primary);
 }
 
-.input__search{
+.input__search {
     border-radius: 25px 0px 0px 0px;
-    border: solid #0077cc  1px;
+    border: solid #0077cc 1px;
 }
 
 
-.button__search{
+.button__search {
     border-radius: 0px 0px 25px 0px;
-    border: solid #0077cc  1px;
+    border: solid #0077cc 1px;
 }
 
-.button__search:hover{
+.button__search:hover {
     color: #fff;
     background-color: var(--color__primary);
-    border: solid #0077cc  3px;
+    border: solid #0077cc 3px;
 }
 
-.button__cart{
+.button__cart {
     font-size: 20px;
     text-decoration: none;
     color: var(--color__primary);
 }
 
-.switch{
+.switch {
     transform: translatex(50px);
 }
 
-.usa{
+.usa {
     transform: translatex(12px);
 }
 
@@ -107,15 +107,15 @@ a{
 /************************ 
     2- anuncios   
 *************************/
-.anuncio_collapse{
+.anuncio_collapse {
     font-size: 12px;
 }
 
 
-.anuncio_collapse .sidebar{
+.anuncio_collapse .sidebar {
     background: rgba(255, 255, 255, 0.978);
     position: fixed;
-    top:80px;
+    top: 80px;
     left: -300px;
     width: 280px;
     height: 100px;
@@ -130,10 +130,10 @@ body.anuncio .anuncio_collapse .sidebar {
     left: 30px;
 }
 
-.delivery_gratis{
+.delivery_gratis {
     background: var(--color__fucsia);
     position: fixed;
-    bottom:80px;
+    bottom: 80px;
     right: -220px;
     width: 220px;
     height: 200px;
@@ -141,11 +141,12 @@ body.anuncio .anuncio_collapse .sidebar {
     z-index: 2000;
     border-radius: 100px 0px 100px 100px;
 }
-.oferta p{
+
+.oferta p {
     margin: 0;
 }
 
-body.delivery .anuncio_collapse .delivery_gratis{
+body.delivery .anuncio_collapse .delivery_gratis {
     right: 30px;
 }
 
@@ -155,12 +156,12 @@ body.delivery .anuncio_collapse .delivery_gratis{
        3- Carousel  
 **********************/
 
-#carousel{
-    
+#carousel {
+
     max-height: 350px;
 }
 
-.carousel-item img{
+.carousel-item img {
     border-radius: 40px 0px 40px 0px;
 }
 
@@ -169,7 +170,7 @@ body.delivery .anuncio_collapse .delivery_gratis{
     4- Separador 
 **********************/
 
-.separador{
+.separador {
     border-radius: 10px 10px 10px 10px;
     color: rgb(5, 8, 110);
     background-color: #97def3;
@@ -179,45 +180,45 @@ body.delivery .anuncio_collapse .delivery_gratis{
 .separador p {
     margin-bottom: 0;
     margin-right: 15px;
-   
+
 }
 
 .separador span {
     margin-bottom: 0;
     margin-left: 5px;
-    
+
 }
 
 
-.separador span img{
+.separador span img {
     margin-right: 20px;
     margin-left: 20px;
 }
 
-.separador img{
-    max-width: 50px;
+.separador img {
+    max-width: 90px;
 }
 
 
 /********************* 
        5- Ads  
 **********************/
-  
 
-.head__title{
+
+.head__title {
     border-bottom: #d6d7d7 solid 1px;
     font-weight: 600;
 }
 
-.carousel__ads img{
+.carousel__ads img {
     max-width: 180px;
     max-height: 180px;
 }
 
-.test img{
+.test img {
     border-radius: 20px 0px 20px 0px;
-    margin: 0;  
-    
+    margin: 0;
+
 }
 
 
@@ -286,37 +287,54 @@ body.delivery .anuncio_collapse .delivery_gratis{
 /********************* 
        7- Products  
 **********************/
+.controled {
+    width: 130px;
+    background-color: #8304f3;
+    font-size: 9px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    margin-top: -140px;
+    margin-left: -50px;
+    border-radius: 0 20px;
 
-.card-body{
+}
+
+.title__controlado {
+    margin: 4px 1px 4px 1px;
+}
+
+
+.card-body {
     display: table;
     border-top: #d6d6d7 solid 1px;
     padding: 5px 5px 5px 5px;
 }
 
-.table_container{
+.table_container {
     display: table-row;
-    
+
 }
 
-.table_cell-title{
+.table_cell-title {
     display: table-cell;
     height: 55px;
 }
 
-.table_cell{
+.table_cell {
     display: table-cell;
-    
+
 }
 
-.card{
+.card {
     margin: 10px 5px 10px 5px;
     max-width: 180px;
     min-height: 310.39px;
     max-height: 310.40px;
-    border: none !important;    
+    border: none !important;
 }
 
-.img__container{
+.img__container {
     min-width: 150px;
     min-height: 170px;
     max-height: 200px;
@@ -326,25 +344,25 @@ body.delivery .anuncio_collapse .delivery_gratis{
     justify-content: center;
 }
 
-.card img{
+.card img {
     min-width: 149px;
     max-height: 149px;
     max-width: 150px;
-   
+
 }
 
 
-.card-title{
+.card-title {
     font-size: 12px;
 }
 
-.price p{
+.price p {
     font-size: 20px;
     color: var(--color__primary);
     margin: 0 0 5px 0;
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 2px 1px 2px 1px #181818b3;
 }
 
@@ -357,32 +375,22 @@ body.delivery .anuncio_collapse .delivery_gratis{
 @media screen and (max-width:800px) {
 
 
-    .head__title{
+    .head__title {
         font-size: 20px;
         border-bottom: #d6d7d7 solid 1px;
         font-weight: 600;
     }
 
-    .carousel__ads img{
+    .carousel__ads img {
         max-width: 170px;
         max-height: 170px;
     }
- 
-    tbody{
-        font-size: 11px;   
+
+    tbody {
+        font-size: 11px;
     }
-   
-    .td-total p{
+
+    .td-total p {
         width: 60px;
-      }
-
-
-    
-    
-
-
-
-
-
-
+    }
 }

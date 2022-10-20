@@ -27,22 +27,6 @@ class ProductsController extends Controller
 
         $file = $request->file("file");
         Excel::import(new ProductsImport, $file);
-
-
-        $product_first = Product::first();
-
-        $product_first->delete();
-
-        
-        $product_last_one = Product::select('id')->orderBy('id', 'desc')->first();
-
-        $product_last_one->delete();
-
-
-        $product_last_two = Product::select('id')->orderBy('id', 'desc')->first();
-
-        $product_last_two->delete();
-
         
         return redirect()->route('Productoss.index')->with('info', 'Productos importados correctamente!');
     }

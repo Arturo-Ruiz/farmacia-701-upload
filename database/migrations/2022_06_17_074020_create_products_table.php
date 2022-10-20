@@ -25,6 +25,8 @@ class CreateProductsTable extends Migration
             $table->float('stock', 10, 2)->nullable();
             $table->string('img')->nullable();
 
+            $table->string('checked')->nullable();
+
             $table->timestamps();
 
             $table->foreign('category_id')->references('id')->on('categories')

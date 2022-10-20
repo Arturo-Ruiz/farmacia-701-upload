@@ -133,7 +133,7 @@
                         <div class="form-check">
                             <input id="debito" value="Tarjeta de debido" name="paymentMethod" type="radio" class="form-check-input" checked=""
                                 required="">
-                            <label class="form-check-label" value="Tarjeta de debido" for="debito">Tarjeta de debido</label>
+                            <label class="form-check-label" value="Tarjeta de debido" for="debito">Tarjeta de débito</label>
                         </div>
                         <div class="form-check">
                             <input id="credito" name="paymentMethod" value="Tarjeta de crédito" type="radio" class="form-check-input" required="">

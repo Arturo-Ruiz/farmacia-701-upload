@@ -14,6 +14,7 @@ class Product extends Model
         'price',
         'stock',
         'img',
+        'checked'
     ];
 
     public function Category(){

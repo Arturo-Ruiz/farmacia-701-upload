@@ -18,21 +18,24 @@ use App\Carousel;
 class WebController extends Controller
 {
 
-    public function dollars(){
+    public function dollars()
+    {
         return redirect('Inicio-Dolares');
     }
 
-    public function bs(){
+    public function bs()
+    {
         return redirect('Inicio');
     }
 
-    public function index(){
+    public function index()
+    {
 
         $dayrate = DayRate::where('id', 1)->first();
 
         $products = Product::where('stock', '>=', 1)
-                            ->orderBy('category_id', 'asc')
-                            ->paginate(15);
+            ->orderBy('category_id', 'asc')
+            ->paginate(15);
 
         $ads = Ad::orderBy('id', 'asc')->get();
 
@@ -42,13 +45,14 @@ class WebController extends Controller
     }
 
 
-    public function index_dollars(){
+    public function index_dollars()
+    {
 
         $dayrate = DayRate::where('id', 1)->first();
 
         $products = Product::where('stock', '>=', 1)
-                            ->orderBy('category_id', 'asc')
-                            ->paginate(15);
+            ->orderBy('category_id', 'asc')
+            ->paginate(15);
 
         $ads = Ad::orderBy('id', 'asc')->get();
 
@@ -57,65 +61,72 @@ class WebController extends Controller
         return view("Home.dollars.index", compact("products", "ads", "dayrate", "carousels"));
     }
 
-    public function pagination(){
+    public function pagination()
+    {
         $dayrate = DayRate::find(1);
         $products = Product::where('stock', '>=', 1)
-                    ->orderBy('category_id', 'asc')
-                    ->paginate(15);
+            ->orderBy('category_id', 'asc')
+            ->paginate(15);
         return view('Home.products.pagination', compact('products', "dayrate"));
     }
 
-    public function pagination_dollars(){
+    public function pagination_dollars()
+    {
         $dayrate = DayRate::find(1);
         $products = Product::where('stock', '>=', 1)
-                    ->orderBy('category_id', 'asc')
-                    ->paginate(15);
+            ->orderBy('category_id', 'asc')
+            ->paginate(15);
         return view('Home.dollars.products.pagination', compact('products', "dayrate"));
     }
 
-    public function search(Request $request){
+    public function search(Request $request)
+    {
         $carousels = Carousel::orderBy('id', 'asc')->get();
 
         $value = $request->search;
         $products = Product::where('stock', '>=', 1)
-                            ->where('name', 'LIKE', "%$value%")
-                            ->get();
+            ->where('name', 'LIKE', "%$value%")
+            ->get();
         $dayrate = DayRate::find(1);
         $ads = Ad::orderBy('id', 'asc')->get();
         return view("Home.search", compact("products", "ads", "dayrate", "value", "carousels"));
     }
 
-    public function search_dollars(Request $request){
+    public function search_dollars(Request $request)
+    {
         $carousels = Carousel::orderBy('id', 'asc')->get();
 
         $value = $request->search;
         $products = Product::where('stock', '>=', 1)
-                            ->where('name', 'LIKE', "%$value%")->get();
+            ->where('name', 'LIKE', "%$value%")->get();
         $dayrate = DayRate::find(1);
         $ads = Ad::orderBy('id', 'asc')->get();
         return view("Home.dollars.search", compact("products", "ads", "dayrate", "value", "carousels"));
     }
 
-    public function cart(){
+    public function cart()
+    {
         return view("Home.cart");
     }
 
-    public function cart_dollars(){
+    public function cart_dollars()
+    {
         return view("Home.dollars.cart");
     }
 
-    public function cartSave(Request $request){
+    public function cartSave(Request $request)
+    {
 
         $sale = new Sale;
         $sale->save();
 
 
-        $products = $request->products; 
+        $products = $request->products;
 
-        foreach (json_decode($products) as $product ) {
+        foreach (json_decode($products) as $product) {
 
             $test = Product::where('name', $product->nombre)->get();
-            
+
             foreach ($test as $key) {
                 $producto = Product::findOrFail($key->id);
 
@@ -123,31 +134,31 @@ class WebController extends Controller
 
                 $producto->save();
             }
-            
         }
         $msg_productos = ", *Compra* : ";
-        foreach (json_decode($products) as $product ) {
-            $msg_productos = " " . $msg_productos . "" . $product->nombre . ", Cantidad: " . $product->cantidad . " ; ";            
+        foreach (json_decode($products) as $product) {
+            $msg_productos = " " . $msg_productos . "" . $product->nombre . ", Cantidad: " . $product->cantidad . " ; ";
         }
 
-        $msg = "*Nombre* : " . $request->name . ", *Email* : " . $request->email . ", *Teléfono* : " . $request->phone . ", *Dirección* : " . $request->address . ", *Método de entrega* : " . $request->metodo_entrega . ", *Método de pago* : " . $request->paymentMethod . " " . $msg_productos . ", *Total* : ". $request->total . " $, Y Los productos que me gustaria que tuvieran disponibles son : " . $request->solicitud ;
+        $msg = "*Nombre* : " . $request->name . ", *Email* : " . $request->email . ", *Teléfono* : " . $request->phone . ", *Dirección* : " . $request->address . ", *Método de entrega* : " . $request->metodo_entrega . ", *Método de pago* : " . $request->paymentMethod . " " . $msg_productos . ", *Total* : " . $request->total . " .Bs, Y Los productos que me gustaria que tuvieran disponibles son : " . $request->solicitud;
 
 
         return view("Home.whatsapp", compact("msg"));
     }
 
-    public function cartSaveDollars(Request $request){
+    public function cartSaveDollars(Request $request)
+    {
 
         $sale = new Sale;
         $sale->save();
 
 
-        $products = $request->products; 
+        $products = $request->products;
 
-        foreach (json_decode($products) as $product ) {
+        foreach (json_decode($products) as $product) {
 
             $test = Product::where('name', $product->nombre)->get();
-            
+
             foreach ($test as $key) {
                 $producto = Product::findOrFail($key->id);
 
@@ -155,16 +166,14 @@ class WebController extends Controller
 
                 $producto->save();
             }
-            
         }
         $msg_productos = ", *Compra* : ";
-        foreach (json_decode($products) as $product ) {
-            $msg_productos = " " . $msg_productos . "" . $product->nombre . ", Cantidad: " . $product->cantidad . " ; ";            
+        foreach (json_decode($products) as $product) {
+            $msg_productos = " " . $msg_productos . "" . $product->nombre . ", Cantidad: " . $product->cantidad . " ; ";
         }
 
-        $msg = "*Nombre* : " . $request->name . ", *Email* : " . $request->email . ", *Teléfono* : " . $request->phone . ", *Dirección* : " . $request->address . ", *Método de entrega* : " . $request->metodo_entrega . ", *Método de pago* : " . $request->paymentMethod . " " . $msg_productos . ", *Total* : ". $request->total . " $, Y Los productos que me gustaria que tuvieran disponibles son : " . $request->solicitud ;
+        $msg = "*Nombre* : " . $request->name . ", *Email* : " . $request->email . ", *Teléfono* : " . $request->phone . ", *Dirección* : " . $request->address . ", *Método de entrega* : " . $request->metodo_entrega . ", *Método de pago* : " . $request->paymentMethod . " " . $msg_productos . ", *Total* : " . $request->total . " $, Y Los productos que me gustaria que tuvieran disponibles son : " . $request->solicitud;
 
         return view("Home.whatsapp", compact("msg"));
     }
 }
-
