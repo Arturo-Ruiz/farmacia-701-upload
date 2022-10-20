@@ -176,7 +176,10 @@
         <footer class="footer mt-auto py-3 bg-dark">
             <div class="container">
                 <div class="d-flex justify-content-center">
-                    <span class="text-secondary">Sponsored by Farmacia 701 ca &copy; all rigths reserved</span>
+                    <span class="text-secondary">&copy; Ingenio Studio <a href="#"
+                            class="font-weight-bold ml-1" target="_blank">Henry Silva</a> & <a href="#"
+                            class="font-weight-bold ml-1" target="_blank">Arturo Ruiz</a>
+                    </span>
                 </div>
             </div>
         </footer>

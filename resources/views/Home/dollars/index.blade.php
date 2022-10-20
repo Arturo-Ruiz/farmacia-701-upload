@@ -29,7 +29,8 @@
             <div class="d-flex align-items-center col-7 justify-content-center">
                 <input id="input_search" class="form-control form-control-dark input__search " type="text"
                     placeholder="Busca tu producto aqui" aria-label="Search" />
-                <a href="#" id="search" class="btn button__blue button__search search"><i class="fa-solid fa-search"></i></a>
+                <a href="#" id="search" class="btn button__blue button__search search"><i
+                        class="fa-solid fa-search"></i></a>
             </div>
 
             <div class="navbar-nav cart__icon">
@@ -42,8 +43,8 @@
 
             <div class="form-check form-switch d-flex flex-column" style="padding: 0;">
                 <img src="{{ asset('img\usa.png') }}" class="img-fluid usa" style="width: 25px;" alt="bandera usa">
-                <input checked id="dollars" class="form-check-input switch" style="width: 30px; " type="checkbox" role="switch"
-                    id="flexSwitchCheck2">
+                <input checked id="dollars" class="form-check-input switch" style="width: 30px; " type="checkbox"
+                    role="switch" id="flexSwitchCheck2">
                 <label class="form-check-label text-primary mx-1" for="flexSwitchCheck2">
                     <span>
                         Bs {{ $dayrate->value }}
@@ -81,11 +82,11 @@
         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 @foreach ($carousels as $carousel)
-                <div class="carousel-item active">
-                    <!--data-bs-interval="2000"-->
-                        <img src="{{ asset('carousel\\' . $carousel->img) }}" class=" d-flex w-100 img-fluid"
-                            alt="imagen de carrusel numero uno">
-                </div>
+                    <div class="carousel-item active">
+                        <!--data-bs-interval="2000"-->
+                            <img src="{{ asset('carousel\\' . $carousel->img) }}" class=" d-flex w-100 img-fluid"
+                                alt="imagen de carrusel numero uno">
+                    </div>
                 @endforeach
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -171,7 +172,10 @@
         <footer class="footer mt-auto py-3 bg-dark">
             <div class="container">
                 <div class="d-flex justify-content-center">
-                    <span class="text-secondary">Sponsored by Farmacia 701 ca &copy; all rigths reserved</span>
+                    <span class="text-secondary">&copy; Ingenio Studio <a href="#"
+                            class="font-weight-bold ml-1" target="_blank">Henry Silva</a> & <a href="#"
+                            class="font-weight-bold ml-1" target="_blank">Arturo Ruiz</a>
+                    </span>
                 </div>
             </div>
         </footer>
@@ -222,12 +226,11 @@
 
     dollars.addEventListener("click", (e) => {
         e.preventDefault();
-        
+
         sessionStorage.clear();
 
-        location.href = "{{url('api/bs')}}";
+        location.href = "{{ url('api/bs') }}";
     })
-    
 </script>
 <script>
     $(document).ready(function() {
