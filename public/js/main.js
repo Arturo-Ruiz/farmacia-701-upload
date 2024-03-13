@@ -75,6 +75,11 @@ divProducto.addEventListener("click", (e) => {
   // console.log(res.nombre);
   if (e.target.innerHTML === "Agregar") {
     let nombreProducto = e.path[1].childNodes[1].innerText;
+    console.log(e.path.path[1].childNodes[1])
+    console.log(e.path.path[1])
+    console.log(e.path)
+
+
     let precio = e.path[1].childNodes[3].children[1].innerText;
     if (arrayProducto === null) {
       arrayProducto = [];
