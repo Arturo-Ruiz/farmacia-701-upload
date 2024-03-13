@@ -99,7 +99,7 @@ divProducto.addEventListener("click", (e) => {
     }
 
     // Cambiar boton agregar por sumar y restar
-    let addRest__div = e.path[1].childNodes[7];
+    let addRest__div = e.composedPath()[1].childNodes[7];
     // console.log(nombreProducto);
 
     if (arrayProducto.length > 0 && e.target.innerHTML === "Agregar") {
