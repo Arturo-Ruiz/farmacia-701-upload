@@ -78,7 +78,7 @@ divProducto.addEventListener("click", (e) => {
     let nombreProducto = e.composedPath()[1].children[0].outerText;
 
 
-    let precio = e.path[1].childNodes[3].children[1].innerText;
+    let precio = e.composedPath()[1].children[1].children[1].outerText;
     if (arrayProducto === null) {
       arrayProducto = [];
       crearProducto(nombreProducto, precio);
