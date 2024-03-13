@@ -8,7 +8,7 @@
                             <p class="title__controlado text-uppercase">Requiere recipe</p>
                         </div>
                     @endif
-                    <img src="{{ asset('products//' . $product->img) }}" class="card-img-top img-fluid" alt="...">
+                    <img src="{{ asset('products/' . $product->img) }}" class="card-img-top img-fluid" alt="...">
                 </div>
             @else
                 <div class="img__container position-relative">
@@ -17,7 +17,7 @@
                             <p class="title__controlado text-uppercase">Requiere recipe</p>
                         </div>
                     @endif
-                    <img src="{{ asset('img\\logo.png') }}" class="card-img-top img-fluid" alt="...">
+                    <img src="{{ asset('img/logo.png') }}" class="card-img-top img-fluid" alt="...">
                 </div>
             @endif
             <div class="card-body">
