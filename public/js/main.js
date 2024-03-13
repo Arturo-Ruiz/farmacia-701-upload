@@ -75,7 +75,7 @@ divProducto.addEventListener("click", (e) => {
   // console.log(res.nombre);
   if (e.target.innerHTML === "Agregar") {
     console.log(e.composedPath())
-    let nombreProducto = e.path[1].childNodes[1].innerText;
+    let nombreProducto = e.composedPath()[1].children[0].outerText;
 
 
     let precio = e.path[1].childNodes[3].children[1].innerText;
