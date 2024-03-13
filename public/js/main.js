@@ -103,7 +103,7 @@ divProducto.addEventListener("click", (e) => {
     // console.log(nombreProducto);
 
     if (arrayProducto.length > 0 && e.target.innerHTML === "Agregar") {
-      e.path[0].classList.replace("d-block", "d-none");
+      e.composedPath()[0].classList.replace("d-block", "d-none");
 
       arrayProducto.map((element) => {
         if (nombreProducto === element.nombre) {
