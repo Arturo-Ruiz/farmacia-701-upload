@@ -74,7 +74,6 @@ divProducto.addEventListener("click", (e) => {
 
   // console.log(res.nombre);
   if (e.target.innerHTML === "Agregar") {
-    console.log(e.path.path[1].childNodes[1])
     console.log(e.path.path[1])
     console.log(e.path)
     let nombreProducto = e.path[1].childNodes[1].innerText;
