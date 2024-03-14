@@ -42,7 +42,7 @@ const insertarTabla = () => {
 
   if (itemsCart === null) {
     console.log("no hay productos");
-  } else {  
+  } else {
     $("#products").val(sessionStorage.getItem("item"));
     itemsCart.forEach((element) => {
       tablaPedido.innerHTML += `<tr>
@@ -177,7 +177,7 @@ divProducto.addEventListener("click", (e) => {
 function itemsCount() {
   let divCart = document.querySelector(".button__cart");
   let items = JSON.parse(sessionStorage.getItem("item"));
-
+  console.log(items)
   let temp = items.map(function (item) {
     return parseFloat(item.cantidad);
   });
