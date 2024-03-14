@@ -304,7 +304,9 @@
                 <span class="text-primary">Su pedido</span>
                 <span class="badge bg-primary rounded-pill"> ${sumItems} <i class="fa-solid fa-cart-shopping"></i></span>`;
         } else {
-            console.log("no se pudo cargar total de items");
+            divTable.innerHTML = `
+                <span class="text-primary">Su pedido</span>
+                <span class="badge bg-primary rounded-pill">0<i class="fa-solid fa-cart-shopping"></i></span>`;
         }
     };
 
