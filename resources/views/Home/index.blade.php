@@ -129,7 +129,7 @@
 
         <div class="owl-carousel carousel__ads">
             @foreach ($ads as $ad)
-                <div class="test"><img src="{{ asset('ads\\' . $ad->img) }}" alt=""></div>
+                <div class="test"><img src="{{ asset('ads/' . $ad->img) }}" alt=""></div>
             @endforeach
         </div>
 
