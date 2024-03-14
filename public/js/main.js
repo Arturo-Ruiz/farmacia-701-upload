@@ -143,7 +143,7 @@ divProducto.addEventListener("click", (e) => {
       itemsCount();
     });
   } else if (e.target.innerText === "-") {
-    let addButton = e.path[2].children[2];
+    let addButton = e.composedPath()[2].children[2];
     cart.map((e) => {
       if (producto == e.nombre) {
         e.cantidad = --e.cantidad;
