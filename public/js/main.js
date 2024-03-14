@@ -120,7 +120,7 @@ divProducto.addEventListener("click", (e) => {
   // sumar y restar cantidad del mismo productos al carrito
   let cart = JSON.parse(sessionStorage.getItem("item")); //Llamar items nuevamente despues de llenarlo
   let producto = e.composedPath()[2].childNodes[1].innerText;
-  let contenedor__sumaResta = e.path[1];
+  let contenedor__sumaResta = e.composedPath()[1];
 
   if (e.target.innerText === "+") {
     // console.log(producto);
