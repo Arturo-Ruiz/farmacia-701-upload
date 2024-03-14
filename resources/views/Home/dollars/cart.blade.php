@@ -226,7 +226,7 @@
         e.preventDefault();
         // console.log(e);
 
-        let nombreProducto = e.path[3].childNodes[1].innerHTML;
+        let nombreProducto = e.composedPath()[3].childNodes[1].innerHTML;
         let items = JSON.parse(sessionStorage.getItem("item"))
 
         if (e.target.innerText === '+') {
@@ -316,7 +316,7 @@
         document.getElementById("products__table").addEventListener("click", (e) => {
 
             let productos = JSON.parse(sessionStorage.getItem('item'));
-            let productoDeleted = e.path[4].children[0].innerHTML
+            let productoDeleted = e.composedPath()[4].children[0].innerHTML
 
             let res = productos.filter(e => e.nombre != productoDeleted);
             // console.log(res);  
@@ -333,7 +333,7 @@
         document.getElementById("products__table").addEventListener("click", (e) => {
 
             let productos = JSON.parse(sessionStorage.getItem('item'));
-            let productoDeleted = e.path[4].children[0].innerHTML
+            let productoDeleted = e.composedPath()[4].children[0].innerHTML
             console.log(productoDeleted);
             if (e.nombre === productoDeleted && e.cantidad === 0) {
                 let res = productos.filter(e => e.nombre != productoDeleted);
