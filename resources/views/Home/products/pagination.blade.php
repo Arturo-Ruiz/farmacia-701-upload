@@ -43,3 +43,7 @@
         </div>
     @endforeach
 @endif
+
+<script>
+    console.log("{{ $products }}");
+</script>
