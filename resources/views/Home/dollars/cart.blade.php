@@ -133,7 +133,7 @@
                         <div class="form-check">
                             <input id="debito" value="Tarjeta de debido" name="paymentMethod" type="radio" class="form-check-input" checked=""
                                 required="">
-                            <label class="form-check-label" value="Tarjeta de debido" for="debito">Tarjeta de débito</label>
+                            <label class="form-check-label" value="Tarjeta de debito" for="debito">Tarjeta de débito</label>
                         </div>
                         <div class="form-check">
                             <input id="credito" name="paymentMethod" value="Tarjeta de crédito" type="radio" class="form-check-input" required="">
@@ -304,7 +304,9 @@
                 <span class="text-primary">Su pedido</span>
                 <span class="badge bg-primary rounded-pill"> ${sumItems} <i class="fa-solid fa-cart-shopping"></i></span>`;
         } else {
-            console.log("no se pudo cargar total de items");
+            divTable.innerHTML = `
+                <span class="text-primary">Su pedido</span>
+                <span class="badge bg-primary rounded-pill">0<i class="fa-solid fa-cart-shopping"></i></span>`;
         }
     };
 
