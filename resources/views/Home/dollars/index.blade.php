@@ -55,25 +55,6 @@
         </nav>
     </header>
 
-    <section class="anuncio_collapse">
-        <div class="sidebar">
-            <p class="text-center h6 text-primary text-uppercase fw-bold">Prueba nuestro buscador</p>
-            <p class=" mx-4 text-secondary">Haz tu búsqueda por alfabeto, nombre o componente activo</p>
-        </div>
-
-        <div class="delivery_gratis">
-            <div class="d-flex justify-content-end">
-                <button type="button" class="btn-close p-2 h6" onclick="quitar_ad()"></button>
-            </div>
-            <div class="oferta text-center">
-                <p class="h4 text-uppercase text-light fw-bold">Envio gratis</p>
-                <span class="text-white fs-1"><i class="fa-solid fa-truck-fast"></i></span>
-                <p class="text-dark">Para compras +10$</p>
-                <p class="text-dark">en Ciudad Bolívar</p>
-            </div>
-        </div>
-    </section>
-
 
     <!-- carousel intro  -->
 
