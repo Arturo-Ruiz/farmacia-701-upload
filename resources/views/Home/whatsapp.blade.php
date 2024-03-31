@@ -9,7 +9,7 @@
     console.log(dni)
     console.log(email)
     console.log(phone)
-    console.log(phone)
+    console.log(products)
 
 
     products.forEach((element) => console.log(element));
