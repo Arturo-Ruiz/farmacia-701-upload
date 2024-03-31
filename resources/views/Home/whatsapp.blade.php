@@ -1,12 +1,19 @@
 <script>
     let name ="{{ $name }}"; 
+    let dni ="{{ $dni }}"; 
+    let email ="{{ $email }}"; 
+    let phone ="{{ $phone }}"; 
+
+    console.log(dni)
+    console.log(email)
+    console.log(phone)
     
-    let msg = `Nombre Y Apellido o Empresa: **${name}**
+    let msg = `Nombre Y Apellido o Empresa: *${name}*
     
     `; 
 
     let url = `https://api.whatsapp.com/send?phone=584141850671&text=${encodeURIComponent(msg)}`; 
     
-    location.href = url;
+    // location.href = url;
 
 </script>
