@@ -86,7 +86,7 @@
 
                         <div class="col-12">
                             <label for="dni" class="form-label">Cedula</label>
-                            <input name="dni" type="text" class="form-control" placeholder="Cedula" value=""
+                            <input name="dni" type="text" class="form-control" placeholder="Ingresa Tú Cedula" value=""
                                 required="active">
                         </div>
 
