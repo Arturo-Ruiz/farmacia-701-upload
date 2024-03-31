@@ -80,13 +80,13 @@
                     <div class="row g-3">
                         <div class="col-12">
                             <label for="firstName" class="form-label">Nombre y Apellido</label>
-                            <input name="name" type="text" class="form-control" placeholder="Ingresa Tú Nombre y Apellido" value=""
+                            <input name="name" type="text" class="form-control" placeholder="Ingresar Nombre y Apellido" value=""
                                 required="active">
                         </div>
 
                         <div class="col-12">
                             <label for="dni" class="form-label">Cedula O Rif</label>
-                            <input name="dni" type="text" class="form-control" placeholder="Ingresa r cedula o el rif" value=""
+                            <input name="dni" type="text" class="form-control" placeholder="Ingresar Cedula o RIF" value=""
                                 required="active">
                         </div>
 
