@@ -9,7 +9,8 @@
     console.log(dni)
     console.log(email)
     console.log(phone)
-    console.log(products)
+
+    products.forEach((element) => console.log(element));
 
     
     let msg = `Nombre Y Apellido o Empresa: *${name}*
