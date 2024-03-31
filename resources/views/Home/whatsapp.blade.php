@@ -5,8 +5,8 @@
     
     `; 
 
-    // let url = `https://api.whatsapp.com/send?phone=584141850671&text=${encodeURIComponent(msg)}`; 
+    let url = `https://api.whatsapp.com/send?phone=584141850671&text=${encodeURIComponent(msg)}`; 
     
-    // location.href = url;
+    location.href = url;
 
 </script>
