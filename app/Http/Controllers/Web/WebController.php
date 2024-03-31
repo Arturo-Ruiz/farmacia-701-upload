@@ -123,6 +123,8 @@ class WebController extends Controller
 
         $products = $request->products;
 
+        dd($request->dni)
+
         foreach (json_decode($products) as $product) {
 
             $test = Product::where('name', $product->nombre)->get();
