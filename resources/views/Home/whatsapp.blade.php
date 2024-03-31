@@ -11,8 +11,15 @@
     console.log(phone)
     console.log(products)
 
+    let order_products = ``; 
+    JSON.parse(products).forEach((element) => 
+        order_products = order_products + `
+            ${element}
+        `
+    );
 
-    JSON.parse(products).forEach((element) => console.log(element));
+    console.log(order_products)
+
 
     
     let msg = `Nombre Y Apellido o Empresa: *${name}*
