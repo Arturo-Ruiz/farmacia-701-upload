@@ -80,7 +80,7 @@
                     <div class="row g-3">
                         <div class="col-12">
                             <label for="firstName" class="form-label">Nombre y Apellido</label>
-                            <input name="name" type="text" class="form-control" placeholder="Nombre y Apellido" value=""
+                            <input name="name" type="text" class="form-control" placeholder="Ingresa Tú Nombre y Apellido" value=""
                                 required="active">
                         </div>
 
