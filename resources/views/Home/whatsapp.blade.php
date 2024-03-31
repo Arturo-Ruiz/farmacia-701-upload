@@ -3,10 +3,14 @@
     let dni ="{{ $dni }}"; 
     let email ="{{ $email }}"; 
     let phone ="{{ $phone }}"; 
+    let products ="{{ $products }}"; 
+
 
     console.log(dni)
     console.log(email)
     console.log(phone)
+    console.log(products)
+
     
     let msg = `Nombre Y Apellido o Empresa: *${name}*
     
