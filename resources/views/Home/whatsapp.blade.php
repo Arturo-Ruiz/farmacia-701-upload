@@ -23,11 +23,14 @@ ${element['nombre']}
 
     
     let msg = `Nombre Y Apellido o Empresa: *${name}*
-    
-    `; 
+               Cedula o RIF: *${dni}*`
+    if (email) {
+        msg = msg + `
+        Email: ${email}`
+     }
 
     let url = `https://api.whatsapp.com/send?phone=584141850671&text=${encodeURIComponent(msg)}`; 
-    
+    console.log(msg)
     // location.href = url;
 
 </script>
