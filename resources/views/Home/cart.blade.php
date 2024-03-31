@@ -79,10 +79,17 @@
 
                     <div class="row g-3">
                         <div class="col-12">
-                            <label for="firstName" class="form-label">Nombre y apellido</label>
-                            <input name="name" type="text" class="form-control" placeholder="Ingresar nombre y apellido" value=""
+                            <label for="firstName" class="form-label">Nombre y Apellido</label>
+                            <input name="name" type="text" class="form-control" placeholder="Nombre y Apellido" value=""
                                 required="active">
                         </div>
+
+                        <div class="col-12">
+                            <label for="dni" class="form-label">Cedula</label>
+                            <input name="dni" type="text" class="form-control" placeholder="Cedula" value=""
+                                required="active">
+                        </div>
+
 
                         <div class="col-12">
                             <label for="email" class="form-label">Email <span
@@ -165,7 +172,7 @@
                     <div class="my-2 col-6">
                         <div class="form-check">
                             <div class="mb-3">
-                                <textarea name="solicitud" class="form-control solicitud__area" id="solicitud" rows="2" placeholder="Igrese productos requeridos que no aparecen en el catálogo"></textarea>
+                                <textarea name="solicitud" class="form-control solicitud__area" id="solicitud" rows="2" placeholder="Ingrese productos requeridos que no aparecen en el catálogo"></textarea>
                               </div>
                         </div>
                     </div>
