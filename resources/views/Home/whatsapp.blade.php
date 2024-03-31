@@ -10,7 +10,7 @@
     console.log(email)
     console.log(phone)
 
-    products.forEach((element) => console.log(element));
+    JSON.parse(products).forEach((element) => console.log(element));
 
     
     let msg = `Nombre Y Apellido o Empresa: *${name}*
