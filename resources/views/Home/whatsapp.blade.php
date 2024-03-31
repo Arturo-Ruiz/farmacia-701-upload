@@ -3,14 +3,16 @@
     let dni ="{{ $dni }}"; 
     let email ="{{ $email }}"; 
     let phone ="{{ $phone }}"; 
-    let products ="{{ $products }}"; 
+    let products ={{ $products }}; 
 
 
     console.log(dni)
     console.log(email)
     console.log(phone)
+    console.log(phone)
 
-    JSON.parse(products).forEach((element) => console.log(element));
+
+    products.forEach((element) => console.log(element));
 
     
     let msg = `Nombre Y Apellido o Empresa: *${name}*
