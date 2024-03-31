@@ -123,8 +123,6 @@ class WebController extends Controller
 
         $products = $request->products;
 
-        echo($request)
-
         foreach (json_decode($products) as $product) {
 
             $test = Product::where('name', $product->nombre)->get();
@@ -142,7 +140,7 @@ class WebController extends Controller
             $msg_productos = " " . $msg_productos . "" . $product->nombre . ", Cantidad: " . $product->cantidad . " ; ";
         }
 
-        $msg = "*Nombre* : " . $request->name . ", *Email* : " . $request->email . ", *Teléfono* : " . $request->phone . ", *Dirección* : " . $request->address . ", *Método de entrega* : " . $request->metodo_entrega . ", *Método de pago* : " . $request->paymentMethod . " " . $msg_productos . ", *Total* : " . $request->total . " .Bs, Y Los productos que me gustaria que tuvieran disponibles son : " . $request->solicitud;
+        $msg = "*Nombre Y Apellido O Empresa* : " . $request->name . ", *Cedula o RIF* : " . $request->dni . ", *Email* : " . $request->email . ", *Teléfono* : " . $request->phone . ", *Dirección* : " . $request->address . ", *Método de entrega* : " . $request->metodo_entrega . ", *Método de pago* : " . $request->paymentMethod . " " . $msg_productos . ", *Total* : " . $request->total . " .Bs, Y Los productos que me gustaria que tuvieran disponibles son : " . $request->solicitud;
 
 
         return view("Home.whatsapp", compact("msg"));
