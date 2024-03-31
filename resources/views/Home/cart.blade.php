@@ -79,8 +79,8 @@
 
                     <div class="row g-3">
                         <div class="col-12">
-                            <label for="firstName" class="form-label">Nombre y Apellido</label>
-                            <input name="name" type="text" class="form-control" placeholder="Ingresar Nombre y Apellido" value=""
+                            <label for="firstName" class="form-label">Nombre y Apellido o Nombre de la empresa</label>
+                            <input name="name" type="text" class="form-control" placeholder="Nombre y Apellido o Nombre de la empresa" value=""
                                 required="active">
                         </div>
 
