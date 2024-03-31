@@ -79,8 +79,8 @@
 
                     <div class="row g-3">
                         <div class="col-12">
-                            <label for="firstName" class="form-label">Nombre y Apellido o Nombre de la empresa</label>
-                            <input name="name" type="text" class="form-control" placeholder="Nombre y Apellido o Nombre de la empresa" value=""
+                            <label for="firstName" class="form-label">Nombre y Apellido o Nombre de empresa</label>
+                            <input name="name" type="text" class="form-control" placeholder="Nombre y Apellido o Nombre de empresa" value=""
                                 required="active">
                         </div>
 
@@ -140,7 +140,7 @@
                     <h4 class="mb-1">Método de pago <i class="fa-solid fa-credit-card"></i></h4>
                     <div class="my-2 col-6">
                         <div class="form-check">
-                            <input id="debito" value="Tarjeta de debido" name="paymentMethod" type="radio" class="form-check-input" checked=""
+                            <input id="debito" value="Tarjeta de debito" name="paymentMethod" type="radio" class="form-check-input" checked=""
                                 required="">
                             <label class="form-check-label" value="Tarjeta de debito" for="debito">Tarjeta de débito</label>
                         </div>
