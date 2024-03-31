@@ -85,8 +85,8 @@
                         </div>
 
                         <div class="col-12">
-                            <label for="dni" class="form-label">Cedula</label>
-                            <input name="dni" type="text" class="form-control" placeholder="Ingresa Tú Cedula" value=""
+                            <label for="dni" class="form-label">Cedula O Rif</label>
+                            <input name="dni" type="text" class="form-control" placeholder="Ingresa tú cedula o el rif" value=""
                                 required="active">
                         </div>
 
