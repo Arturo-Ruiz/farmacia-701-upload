@@ -123,7 +123,7 @@ class WebController extends Controller
 
         $products = $request->products;
 
-        dd($request->dni)
+        dd($request)
 
         foreach (json_decode($products) as $product) {
 
