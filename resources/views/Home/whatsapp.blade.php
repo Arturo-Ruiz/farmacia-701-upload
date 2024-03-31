@@ -3,7 +3,7 @@
     let dni ="{{ $dni }}"; 
     let email ="{{ $email }}"; 
     let phone ="{{ $phone }}"; 
-    let products ={{ $products }}; 
+    let products = sessionStorage.getItem('item');
 
 
     console.log(dni)
