@@ -14,8 +14,8 @@
     let order_products = ``; 
     JSON.parse(products).forEach((element) => 
         order_products = order_products + `
-            ${element['nombre']}
-        `
+${element['nombre']}
+`
     );
 
     console.log(order_products)
