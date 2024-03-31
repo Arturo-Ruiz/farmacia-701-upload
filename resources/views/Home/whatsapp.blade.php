@@ -5,5 +5,5 @@
     `; 
 
     let url = `https://api.whatsapp.com/send?phone=584124212799&text=${encodeURIComponent(msg)}`; 
-    // location.href = url;
+    location.href = url;
 </script>
