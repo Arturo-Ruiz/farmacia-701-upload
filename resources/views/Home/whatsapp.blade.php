@@ -14,7 +14,7 @@
     let order_products = ``; 
     JSON.parse(products).forEach((element) => 
         order_products = order_products + `
-            ${element}
+            ${element['nombre']}
         `
     );
 
