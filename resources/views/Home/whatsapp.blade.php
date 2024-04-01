@@ -7,6 +7,8 @@
     let deliveryMethod ="{{ $deliveryMethod }}"; 
     let paymentMethod ="{{ $paymentMethod }}"; 
     let total ="{{ $total }}"; 
+    let requestProducts ="{{ $requestProducts }}"; 
+
 
     let products = sessionStorage.getItem('item');
 
@@ -61,6 +63,12 @@ msg = msg + `
 
 *Total Compra: ${total}* 
 `
+
+if (requestProducts) {
+        msg = msg + `
+
+Y Los productos que me gustaría que tuvieran disponibles son: *${requestProducts}*`
+     }
 
 
     // let url = `https://api.whatsapp.com/send?phone=584141850671&text=${encodeURIComponent(msg)}`; 

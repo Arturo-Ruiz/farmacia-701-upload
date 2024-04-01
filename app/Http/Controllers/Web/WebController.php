@@ -151,13 +151,15 @@ class WebController extends Controller
         $deliveryMethod = $request->metodo_entrega;
         $paymentMethod = $request->paymentMethod;
         $total = $request->total . " .Bs";
+        $requestProducts = $request->solicitud;
 
 
 
 
 
 
-        return view("Home.whatsapp", compact("msg", "name", "dni", "email", "phone", "address", "deliveryMethod", "paymentMethod", "total"));
+
+        return view("Home.whatsapp", compact("msg", "name", "dni", "email", "phone", "address", "deliveryMethod", "paymentMethod", "total", "requestProducts"));
     }
 
     public function cartSaveDollars(Request $request)
