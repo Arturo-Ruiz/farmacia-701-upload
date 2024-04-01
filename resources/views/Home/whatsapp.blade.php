@@ -54,13 +54,11 @@ Dirección de entrega: *${address}*`
 
      msg = msg + `
      
-Método de entrega: *${deliveryMethod}*
-     `
+Método de entrega: *${deliveryMethod}*`
 
      msg = msg + `
      
-Método de pago: *${paymentMethod}*
-     `
+Método de pago: *${paymentMethod}*`
 
 
 
