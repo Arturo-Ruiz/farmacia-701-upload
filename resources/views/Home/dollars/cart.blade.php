@@ -105,7 +105,7 @@
                         <div class="col-12">
                             <label for="address" class="form-label">Direccion de envío</label>
                             <input type="text" name="address" class="form-control" id="address"
-                                placeholder="En caso de solicitar delivery" required="">
+                                placeholder="En caso de solicitar delivery">
                         </div>
 
 
