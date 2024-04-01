@@ -63,8 +63,8 @@ Método de pago: *${paymentMethod}*`
 
 msg = msg + `
 
-Compra:
 
+Compra:
 ${order_products}
 `
 
