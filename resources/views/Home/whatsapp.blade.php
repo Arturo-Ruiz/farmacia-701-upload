@@ -6,18 +6,9 @@
     let address ="{{ $address }}"; 
     let deliveryMethod ="{{ $deliveryMethod }}"; 
     let paymentMethod ="{{ $paymentMethod }}"; 
-
-
+    let total ="{{ $total }}"; 
 
     let products = sessionStorage.getItem('item');
-
-
-    console.log(dni)
-    console.log(email)
-    console.log(phone)
-    console.log(products)
-    console.log(deliveryMethod)
-
 
     let order_products = ``; 
     JSON.parse(products).forEach((element) => 
@@ -26,12 +17,9 @@
 `
     );
 
-    console.log(order_products)
-
-
     
     let msg = `*Farmacia 701*
-    
+
 Nombre Y Apellido o Empresa: *${name}*
 
 Cedula o RIF: *${dni}*`
@@ -70,8 +58,11 @@ Compra:
 ${order_products}
 `
 
+msg = msg + `
 
 
+*Total Compra: ${total}* 
+`
 
 
     // let url = `https://api.whatsapp.com/send?phone=584141850671&text=${encodeURIComponent(msg)}`; 
