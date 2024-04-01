@@ -22,7 +22,7 @@
     let order_products = ``; 
     JSON.parse(products).forEach((element) => 
         order_products = order_products + `
-${element['nombre']}
+*${element['nombre']}* | Cantidad: *${element['cantidad']}*
 `
     );
 
@@ -63,6 +63,12 @@ Método de pago: *${paymentMethod}*`
 
 msg = msg + `
 *--------------*
+`
+
+msg = msg + `
+
+
+Compra:
 `
 
 
