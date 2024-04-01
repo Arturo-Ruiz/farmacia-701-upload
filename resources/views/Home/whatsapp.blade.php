@@ -26,6 +26,7 @@ ${element['nombre']}
 `
     );
 
+    console.log(order_products)
 
 
     
@@ -59,6 +60,12 @@ Método de entrega: *${deliveryMethod}*`
      msg = msg + `
      
 Método de pago: *${paymentMethod}*`
+
+msg = msg + `
+*--------------*
+`
+
+
 
 
 
