@@ -4,6 +4,8 @@
     let email ="{{ $email }}"; 
     let phone ="{{ $phone }}"; 
     let address ="{{ $address }}"; 
+    let deliveryMethod ="{{ $deliveryMethod }}"; 
+
 
     let products = sessionStorage.getItem('item');
 
@@ -12,7 +14,7 @@
     console.log(email)
     console.log(phone)
     console.log(products)
-    console.log(address)
+    console.log(deliveryMethod)
 
 
     let order_products = ``; 
