@@ -62,13 +62,10 @@ Método de entrega: *${deliveryMethod}*`
 Método de pago: *${paymentMethod}*`
 
 msg = msg + `
-*--------------*
-`
-
-msg = msg + `
-
 
 Compra:
+
+${order_products}
 `
 
 
