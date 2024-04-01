@@ -30,7 +30,9 @@
 
 
     
-    let msg = `Nombre Y Apellido o Empresa: *${name}*
+    let msg = `*Farmacia 701*
+    
+Nombre Y Apellido o Empresa: *${name}*
 
 Cedula o RIF: *${dni}*`
 
