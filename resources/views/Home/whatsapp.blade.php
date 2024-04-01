@@ -5,6 +5,8 @@
     let phone ="{{ $phone }}"; 
     let address ="{{ $address }}"; 
     let deliveryMethod ="{{ $deliveryMethod }}"; 
+    let paymentMethod ="{{ $paymentMethod }}"; 
+
 
 
     let products = sessionStorage.getItem('item');
@@ -52,8 +54,15 @@ Dirección de entrega: *${address}*`
 
      msg = msg + `
      
-     Método de entrega: *${deliveryMethod}*
+Método de entrega: *${deliveryMethod}*
      `
+
+     msg = msg + `
+     
+Método de pago: *${paymentMethod}*
+     `
+
+
 
     // let url = `https://api.whatsapp.com/send?phone=584141850671&text=${encodeURIComponent(msg)}`; 
     console.log(msg)
