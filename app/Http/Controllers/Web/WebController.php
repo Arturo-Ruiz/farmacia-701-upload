@@ -147,10 +147,11 @@ class WebController extends Controller
         $dni = $request->dni;
         $email = $request->email;
         $phone = $request->phone;
-        $products_to_front = $products;
+        $address = $address;
 
 
-        return view("Home.whatsapp", compact("msg", "name", "dni", "email", "phone", "products"));
+
+        return view("Home.whatsapp", compact("msg", "name", "dni", "email", "phone", "address"));
     }
 
     public function cartSaveDollars(Request $request)
