@@ -148,6 +148,8 @@ class WebController extends Controller
         $email = $request->email;
         $phone = $request->phone;
         $address = $request->address;
+        $address = $request->metodo_entrega;
+
 
 
 
