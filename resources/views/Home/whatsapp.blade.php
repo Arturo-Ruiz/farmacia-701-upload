@@ -47,8 +47,13 @@ Teléfono: *${phone}*`
      if (address) {
         msg = msg + `
 
-Dirección de Entrega: *${address}*`
+Dirección de entrega: *${address}*`
      }
+
+     msg = msg + `
+     
+     Método de entrega: *${deliveryMethod}*
+     `
 
     // let url = `https://api.whatsapp.com/send?phone=584141850671&text=${encodeURIComponent(msg)}`; 
     console.log(msg)
