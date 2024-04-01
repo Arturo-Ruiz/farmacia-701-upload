@@ -55,12 +55,9 @@ msg = msg + `
 
 
 Compra:
-${order_products}
-`
+${order_products}`
 
 msg = msg + `
-
-
 *Total Compra: ${total}* 
 `
 
