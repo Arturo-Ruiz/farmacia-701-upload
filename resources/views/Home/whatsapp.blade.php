@@ -48,7 +48,7 @@ Teléfono: *${phone}*`
 Dirección de Entrega: *${address}*`
      }
 
-    let url = `https://api.whatsapp.com/send?phone=584141850671&text=${encodeURIComponent(msg)}`; 
+    // let url = `https://api.whatsapp.com/send?phone=584141850671&text=${encodeURIComponent(msg)}`; 
     console.log(msg)
     location.href = url;
 
