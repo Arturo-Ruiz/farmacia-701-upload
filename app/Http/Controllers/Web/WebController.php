@@ -190,6 +190,18 @@ class WebController extends Controller
 
         $msg = "*Nombre* : " . $request->name . ", *Email* : " . $request->email . ", *Teléfono* : " . $request->phone . ", *Dirección* : " . $request->address . ", *Método de entrega* : " . $request->metodo_entrega . ", *Método de pago* : " . $request->paymentMethod . " " . $msg_productos . ", *Total* : " . $request->total . " $, Y Los productos que me gustaria que tuvieran disponibles son : " . $request->solicitud;
 
-        return view("Home.whatsapp", compact("msg"));
+
+        
+        $name = $request->name;
+        $dni = $request->dni;
+        $email = $request->email;
+        $phone = $request->phone;
+        $address = $request->address;
+        $deliveryMethod = $request->metodo_entrega;
+        $paymentMethod = $request->paymentMethod;
+        $total = $request->total . " .$";
+        $requestProducts = $request->solicitud;
+
+        return view("Home.whatsapp", compact("msg", "name", "dni", "email", "phone", "address", "deliveryMethod", "paymentMethod", "total", "requestProducts"));
     }
 }

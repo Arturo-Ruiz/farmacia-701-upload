@@ -78,9 +78,15 @@
                     @csrf
 
                     <div class="row g-3">
+                    <div class="col-12">
+                            <label for="firstName" class="form-label">Nombre y Apellido o Nombre de empresa</label>
+                            <input name="name" type="text" class="form-control" placeholder="Nombre y Apellido o Nombre de empresa" value=""
+                                required="active">
+                        </div>
+
                         <div class="col-12">
-                            <label for="firstName" class="form-label">Nombre y apellido</label>
-                            <input name="name" type="text" class="form-control" placeholder="Ingresar nombre y apellido" value=""
+                            <label for="dni" class="form-label">Cedula o Rif</label>
+                            <input name="dni" type="text" class="form-control" placeholder="Ingresar Cedula o RIF" value=""
                                 required="active">
                         </div>
 
@@ -131,7 +137,7 @@
                     <h4 class="mb-1">Método de pago <i class="fa-solid fa-credit-card"></i></h4>
                     <div class="my-2 col-6">
                         <div class="form-check">
-                            <input id="debito" value="Tarjeta de debido" name="paymentMethod" type="radio" class="form-check-input" checked=""
+                            <input id="debito" value="Tarjeta de debito" name="paymentMethod" type="radio" class="form-check-input" checked=""
                                 required="">
                             <label class="form-check-label" value="Tarjeta de debito" for="debito">Tarjeta de débito</label>
                         </div>
@@ -189,7 +195,7 @@
 
 
     <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1">Sponsored by Farmacia 701 ca &copy; all rigths reserved</p>
+    <p class="mb-1">Sponsored by Farmacia 701 &copy; all rigths reserved</p>
         <ul class="list-inline">
         </ul>
     </footer>
