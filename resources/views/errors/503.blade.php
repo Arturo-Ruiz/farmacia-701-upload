@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Error 503 - El sitio web necesita mantenimiento</title>
+    <title>Error 503 - Failed payment</title>
 
     <!-- Styles -->
     <style>
@@ -53,7 +53,7 @@
             503 </div>
 
         <div class="message" style="padding: 10px;">
-            El sitio web necesita mantenimiento </div>
+        The server payment invoice has been issued to your account and has not yet been paid, please do so so as not to delete your server.</div>
     </div>
 </body>
 
