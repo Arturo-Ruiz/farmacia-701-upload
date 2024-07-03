@@ -20,11 +20,10 @@ class ProductsImport implements ToModel
         }else{
             $check = false;
         }
-        dd($row);
         return new Product([
             'name'     => $row[1],
             'category_id'     => $row[2],
-            'tax_id'     => $row[3],
+            'tax_id'     => $row[4],
             'stock'     => $row[5],
             'img'     => $row[6],
             'price'     => $row[7],
