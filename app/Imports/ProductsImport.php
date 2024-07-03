@@ -15,7 +15,7 @@ class ProductsImport implements ToModel
      */
     public function model(array $row)
     {
-        if ($row[7] === "S"){
+        if ($row[8] === "S"){
             $check = true;
         }else{
             $check = false;
@@ -24,9 +24,9 @@ class ProductsImport implements ToModel
             'name'     => $row[1],
             'category_id'     => $row[2],
             'tax_id'     => $row[3],
-            'stock'     => $row[4],
-            'img'     => $row[5],
-            'price'     => $row[6],
+            'stock'     => $row[5],
+            'img'     => $row[6],
+            'price'     => $row[7],
             'checked'     => $check,
         ]);
     }
