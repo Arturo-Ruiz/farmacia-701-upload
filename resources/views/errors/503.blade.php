@@ -53,7 +53,8 @@
             503 </div>
 
         <div class="message" style="padding: 10px;">
-        The server payment invoice has been issued to your account and has not yet been paid, please do so so as not to delete your server.</div>
+        Due to user traffic, a paid SSL certificate verification is required.
+    </div>
     </div>
 </body>
 
