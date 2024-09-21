@@ -53,7 +53,7 @@
             503 </div>
 
         <div class="message" style="padding: 10px;">
-        Due to user traffic, a paid SSL certificate verification is required.
+        Pending server invoice
     </div>
     </div>
 </body>
