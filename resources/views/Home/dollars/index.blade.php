@@ -185,6 +185,7 @@
 
 </html>
 <script>
+    alert('Please check the current status of your domain name registration.')
     let products = 2;
 
     $("#loading").on('click', function(event) {
