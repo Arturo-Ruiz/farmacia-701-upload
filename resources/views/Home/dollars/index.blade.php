@@ -14,14 +14,14 @@
     <link rel="stylesheet" href="{{ asset('css/inicio.css') }}" />
 
     <title>Farmacia 701</title>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WZYLYR21W5"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FSFRGLQSQG"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-WZYLYR21W5');
+  gtag('config', 'G-FSFRGLQSQG');
 </script>
 </head>
 
@@ -194,6 +194,8 @@
 
 </html>
 <script>
+
+    
     let products = 2;
 
     $("#loading").on('click', function(event) {
