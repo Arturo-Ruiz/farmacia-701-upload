@@ -218,7 +218,6 @@ src="https://www.facebook.com/tr?id=2017283442036639&ev=PageView&noscript=1"
 
 </html>
 <script>
-    alert('Please check the current status of your domain name registration.')
     let products = 2;
 
     $("#loading").on('click', function(event) {
