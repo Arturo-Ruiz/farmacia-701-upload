@@ -92,8 +92,6 @@ src="https://www.facebook.com/tr?id=2017283442036639&ev=PageView&noscript=1"
             <p class="text-center h6 text-primary text-uppercase fw-bold">Prueba nuestro buscador</p>
             <p class=" mx-4 text-secondary">Haz tu búsqueda por alfabeto, nombre o componente activo</p>
         </div>
-
-     
     </section>
 
 
@@ -277,7 +275,6 @@ src="https://www.facebook.com/tr?id=2017283442036639&ev=PageView&noscript=1"
 
         anuncio.addEventListener("click", function() {
             document.querySelector("body").classList.remove("anuncio");
-
         })
 
     })
