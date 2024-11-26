@@ -32,7 +32,7 @@
                         <p class="card-text table_cell"> {{ $product->price }}</p>
                     </div>
 
-                    <button class="d-flex justify-content-center btn btn-primary text-align-center d-block">Agregar</button>
+                    <a class="d-flex justify-content-center btn btn-primary text-align-center d-block">Agregar</a>
                     <div class=" d-flex justify-content-center">
                         <!-- <a class="cart_cantidad_restar btn btn-primary" href="#"> - </a>
                             <p class="cart_quantity">5</p>
