@@ -53,7 +53,7 @@
             503 </div>
 
         <div class="message" style="padding: 10px;">
-        Pending server invoice
+        Actualización en curso! ✨
     </div>
     </div>
 </body>
