@@ -225,7 +225,7 @@
     <!-- separador anuncio  -->
 
     <section id="categories-carousel-section" class="container py-4">
-    <div class="py-2"> <p class="h3 head__title text-center">Categorías Destacadas</p> </div>
+    <div class="py-2"> <p class="h3 head__title text-start">Laboratorios Recomendados</p> </div>
     <div class="owl-carousel categories-owl-carousel">
         <div class="category-item text-center">
             <a href="#link-categoria-1"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy1L0KksDyj5KhIrjBZeXi3iTjM4TwyoEsMw&s" alt="Categoría 1">
