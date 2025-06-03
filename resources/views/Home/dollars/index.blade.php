@@ -400,15 +400,15 @@
         ],
         responsive: {
             0: { // Pantallas muy pequeñas (móviles en vertical)
-                items: 2, // Mostrar 2 ítems
+                items: 5, // Mostrar 2 ítems
                 dots: true, // Quizás quieras dots en móviles
                 nav: false // Y ocultar nav si hay poco espacio
             },
             576: { // Pantallas pequeñas (móviles en horizontal, sm de Bootstrap)
-                items: 3 // Mostrar 3 ítems
+                items: 5 // Mostrar 3 ítems
             },
             768: { // Pantallas medianas (tablets, md de Bootstrap)
-                items: 4 // Mostrar 4 ítems
+                items: 5 // Mostrar 4 ítems
             },
             992: { // Pantallas grandes (escritorio pequeño, lg de Bootstrap)
                 items: 5 // Mostrar 5 ítems como solicitaste
