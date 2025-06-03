@@ -100,18 +100,6 @@
 
 
     <!-- separador anuncio  -->
-    <section class="separador mt-5 container py-2">
-        <div class="navbar">
-            <div class="container d-flex justify-content-center align-self-center ">
-                <span class="h6 text-uppercase mt-2 fw-bold text-d">unidos</span>
-                <span class="h6 text-uppercase"> <img src="img\logo.png" alt=""> <i
-                        class="fa-solid fa-plus"></i> <img src="{{ asset('img\zoom.png') }}" alt=""></span>
-                <span class="h6 text-uppercase mt-2 fw-bold text-d"> Delivery a nivel nacional <i
-                        class="fa-solid fa-truck-fast fs-4"></i></span>
-            </div>
-        </div>
-    </section>
-
 
     <!-- carousel publicidad -->
 
