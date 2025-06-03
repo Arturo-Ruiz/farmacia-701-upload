@@ -228,7 +228,7 @@
     <div class="py-2"> <p class="h3 head__title text-center">Categorías Destacadas</p> </div>
     <div class="owl-carousel categories-owl-carousel">
         <div class="category-item text-center">
-            <a href="#link-categoria-1"> <img src="https://via.placeholder.com/150/0077cc/FFFFFF?Text=Cat+1" alt="Categoría 1">
+            <a href="#link-categoria-1"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy1L0KksDyj5KhIrjBZeXi3iTjM4TwyoEsMw&s" alt="Categoría 1">
                 <p class="category-name mt-2">Medicina General</p>
             </a>
         </div>
