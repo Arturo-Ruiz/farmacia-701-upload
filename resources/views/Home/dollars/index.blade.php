@@ -23,6 +23,127 @@
 
   gtag('config', 'G-FSFRGLQSQG');
 </script>
+
+<style>
+    /* INDEX 
+    ... (tus otras secciones) ...
+    NUEVO: X- Categories Carousel (Nuevo)
+    ...
+*/
+
+/*********************************
+    X- Categories Carousel (Nuevo)
+**********************************/
+#categories-carousel-section .head__title {
+    margin-bottom: 1.5rem; /* Ajusta el espacio debajo del título si lo usas */
+}
+
+.categories-owl-carousel .category-item {
+    padding: 5px; /* Pequeño espacio para que no se peguen los bordes/sombras */
+}
+
+.categories-owl-carousel .category-item a {
+    text-decoration: none;
+    color: #333; /* Color del texto del nombre de la categoría */
+    display: block; /* Para que el hover afecte a toda el área */
+    transition: transform 0.3s ease-in-out;
+}
+
+.categories-owl-carousel .category-item a:hover {
+    transform: translateY(-5px); /* Efecto sutil al pasar el mouse */
+}
+
+.categories-owl-carousel .category-item img {
+    width: 100px;  /* Ancho inicial para el círculo */
+    height: 100px; /* Alto inicial para el círculo (igual al ancho) */
+    border-radius: 50%; /* ESTO HACE LA IMAGEN CIRCULAR */
+    object-fit: cover; /* Asegura que la imagen cubra el círculo sin deformarse */
+    border: 2px solid var(--color__primary); /* Borde con tu color primario */
+    padding: 3px; /* Espacio opcional entre la imagen y el borde */
+    background-color: #fff; /* Fondo por si las imágenes tienen transparencia */
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 0 auto; /* Para centrar la imagen si el contenedor es más ancho */
+}
+
+.categories-owl-carousel .category-name {
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-top: 10px; /* Espacio entre la imagen y el nombre */
+    line-height: 1.2;
+    height: 2.4em; /* Para tratar de mantener 2 líneas de texto visibles */
+    overflow: hidden; /* Oculta texto extra */
+    text-overflow: ellipsis; /* Añade ... si el texto es muy largo */
+}
+
+/* Estilos para los botones de navegación (opcional, si los activas en JS) */
+.categories-owl-carousel .owl-nav button.owl-prev,
+.categories-owl-carousel .owl-nav button.owl-next {
+    background: rgba(0, 119, 204, 0.8) !important; /* Tu color primario con transparencia */
+    color: white !important;
+    border-radius: 50% !important;
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 16px !important; /* Ajusta el tamaño del icono de flecha */
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories-owl-carousel .owl-nav button.owl-prev {
+    left: -15px !important; /* Ajusta para que no esté tan pegado */
+}
+
+.categories-owl-carousel .owl-nav button.owl-next {
+    right: -15px !important; /* Ajusta para que no esté tan pegado */
+}
+
+.categories-owl-carousel .owl-nav button.owl-prev:hover,
+.categories-owl-carousel .owl-nav button.owl-next:hover {
+    background: var(--color__primary) !important; /* Color primario sólido al pasar el mouse */
+}
+
+
+/* --- AJUSTES RESPONSIVOS PARA EL NUEVO CARRUSEL --- */
+/* Para pantallas medianas (tablets) - ajustamos tamaño del círculo */
+@media screen and (max-width: 991px) { /* Antes del breakpoint 'lg' de Bootstrap */
+    .categories-owl-carousel .category-item img {
+        width: 90px;
+        height: 90px;
+    }
+    .categories-owl-carousel .category-name {
+        font-size: 0.85em;
+    }
+}
+
+/* Para pantallas pequeñas (móviles) - ajustamos más el tamaño */
+@media screen and (max-width: 767px) { /* Antes del breakpoint 'md' de Bootstrap */
+    .categories-owl-carousel .category-item img {
+        width: 80px;
+        height: 80px;
+    }
+     .categories-owl-carousel .owl-nav button.owl-prev {
+        left: -5px !important;
+    }
+
+    .categories-owl-carousel .owl-nav button.owl-next {
+        right: -5px !important;
+    }
+}
+
+@media screen and (max-width: 575px) { /* Antes del breakpoint 'sm' de Bootstrap */
+    .categories-owl-carousel .category-item img {
+        width: 70px;
+        height: 70px;
+    }
+    .categories-owl-carousel .category-name {
+        font-size: 0.8em;
+    }
+}
+</style>
 </head>
 
 <body class="active anuncio delivery bg-light">
@@ -75,6 +196,8 @@
 
     <!-- carousel intro  -->
 
+    
+
     <section class="container py-3">
 
         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
@@ -101,6 +224,49 @@
 
     <!-- separador anuncio  -->
 
+    <section id="categories-carousel-section" class="container py-4">
+    <div class="py-2"> <p class="h3 head__title text-center">Categorías Destacadas</p> </div>
+    <div class="owl-carousel categories-owl-carousel">
+        <div class="category-item text-center">
+            <a href="#link-categoria-1"> <img src="https://via.placeholder.com/150/0077cc/FFFFFF?Text=Cat+1" alt="Categoría 1">
+                <p class="category-name mt-2">Medicina General</p>
+            </a>
+        </div>
+        <div class="category-item text-center">
+            <a href="#link-categoria-2">
+                <img src="https://via.placeholder.com/150/FF146E/FFFFFF?Text=Cat+2" alt="Categoría 2">
+                <p class="category-name mt-2">Cuidado Personal</p>
+            </a>
+        </div>
+        <div class="category-item text-center">
+            <a href="#link-categoria-3">
+                <img src="https://via.placeholder.com/150/6DC72E/FFFFFF?Text=Cat+3" alt="Categoría 3">
+                <p class="category-name mt-2">Vitaminas</p>
+            </a>
+        </div>
+        <div class="category-item text-center">
+            <a href="#link-categoria-4">
+                <img src="https://via.placeholder.com/150/FFA207/FFFFFF?Text=Cat+4" alt="Categoría 4">
+                <p class="category-name mt-2">Bebés y Maternidad</p>
+            </a>
+        </div>
+        <div class="category-item text-center">
+            <a href="#link-categoria-5">
+                <img src="https://via.placeholder.com/150/8304F3/FFFFFF?Text=Cat+5" alt="Categoría 5">
+                <p class="category-name mt-2">Dermocosmética</p>
+            </a>
+        </div>
+        <div class="category-item text-center">
+            <a href="#link-categoria-6">
+                <img src="https://via.placeholder.com/150/333333/FFFFFF?Text=Cat+6" alt="Categoría 6">
+                <p class="category-name mt-2">Equipos Médicos</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="ads" class="container">
+    </section>
     <!-- carousel publicidad -->
 
     <section id="ads" class="container">
@@ -222,6 +388,34 @@
 </script>
 <script>
     $(document).ready(function() {
+
+        $(".categories-owl-carousel").owlCarousel({
+        loop: true,             // Para que sea un bucle infinito
+        margin: 15,             // Espacio entre ítems (ajusta según necesites)
+        nav: true,              // Muestra botones de navegación (prev/next)
+        dots: true,            // Muestra los puntos de paginación (puedes poner false si no los quieres)
+        navText: [              // Personaliza los iconos de navegación (necesitas FontAwesome)
+            "<i class='fa-solid fa-angle-left'></i>",
+            "<i class='fa-solid fa-angle-right'></i>"
+        ],
+        responsive: {
+            0: { // Pantallas muy pequeñas (móviles en vertical)
+                items: 2, // Mostrar 2 ítems
+                dots: true, // Quizás quieras dots en móviles
+                nav: false // Y ocultar nav si hay poco espacio
+            },
+            576: { // Pantallas pequeñas (móviles en horizontal, sm de Bootstrap)
+                items: 3 // Mostrar 3 ítems
+            },
+            768: { // Pantallas medianas (tablets, md de Bootstrap)
+                items: 4 // Mostrar 4 ítems
+            },
+            992: { // Pantallas grandes (escritorio pequeño, lg de Bootstrap)
+                items: 5 // Mostrar 5 ítems como solicitaste
+            }
+        }
+    });
+
         $(".owl-carousel").owlCarousel({
             items: 4,
             loop: true,
