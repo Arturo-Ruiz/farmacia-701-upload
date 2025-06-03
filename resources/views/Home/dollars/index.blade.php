@@ -234,8 +234,8 @@
         </div>
         <div class="category-item text-center">
             <a href="#link-categoria-2">
-                <img src="https://drotafarma.com.ve/wp-content/uploads/2023/12/logo.png" alt="Categoría 2">
-                <p class="category-name mt-2">Drotafarma</p>
+                <img src="https://www.drogueriaits2015.com.ve/app_img/aliados/COFASA.png" alt="Categoría 2">
+                <p class="category-name mt-2">Cofasa</p>
             </a>
         </div>
         <div class="category-item text-center">
