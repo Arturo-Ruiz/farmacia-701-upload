@@ -393,7 +393,7 @@
             autoplayTimeout: 2000,             // Para que sea un bucle infinito
         margin: 10,             // Espacio entre ítems (ajusta según necesites)
         nav: true,              // Muestra botones de navegación (prev/next)
-        dots: false,            // Muestra los puntos de paginación (puedes poner false si no los quieres)
+        dots: true,            // Muestra los puntos de paginación (puedes poner false si no los quieres)
         navText: [              // Personaliza los iconos de navegación (necesitas FontAwesome)
             "<i class='fa-solid fa-angle-left'></i>",
             "<i class='fa-solid fa-angle-right'></i>"
