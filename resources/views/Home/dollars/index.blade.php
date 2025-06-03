@@ -392,7 +392,7 @@
         $(".categories-owl-carousel").owlCarousel({
         loop: true,
                     autoplay: true,
-            autoplayTimeout: 3000,             // Para que sea un bucle infinito
+            autoplayTimeout: 2000,             // Para que sea un bucle infinito
         margin: 10,             // Espacio entre ítems (ajusta según necesites)
         nav: true,              // Muestra botones de navegación (prev/next)
         dots: true,            // Muestra los puntos de paginación (puedes poner false si no los quieres)
