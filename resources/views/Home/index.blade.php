@@ -126,7 +126,7 @@ src="https://www.facebook.com/tr?id=2017283442036639&ev=PageView&noscript=1"
 
     <!-- carousel publicidad -->
 
-    <section id="ads" class="container mt-5">
+    <section id="ads" class="container">
 
         <div class="py-4">
             <p class="h3 head__title">Lo recomendado</p>
