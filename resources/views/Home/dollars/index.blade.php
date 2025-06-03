@@ -390,8 +390,10 @@
     $(document).ready(function() {
 
         $(".categories-owl-carousel").owlCarousel({
-        loop: true,             // Para que sea un bucle infinito
-        margin: 15,             // Espacio entre ítems (ajusta según necesites)
+        loop: true,
+                    autoplay: true,
+            autoplayTimeout: 1000,             // Para que sea un bucle infinito
+        margin: 10,             // Espacio entre ítems (ajusta según necesites)
         nav: true,              // Muestra botones de navegación (prev/next)
         dots: true,            // Muestra los puntos de paginación (puedes poner false si no los quieres)
         navText: [              // Personaliza los iconos de navegación (necesitas FontAwesome)
@@ -400,7 +402,7 @@
         ],
         responsive: {
             0: { // Pantallas muy pequeñas (móviles en vertical)
-                items: 5, // Mostrar 2 ítems
+                items: 4, // Mostrar 2 ítems
                 dots: true, // Quizás quieras dots en móviles
                 nav: false // Y ocultar nav si hay poco espacio
             },
