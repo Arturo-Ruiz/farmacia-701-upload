@@ -234,8 +234,8 @@
         </div>
         <div class="category-item text-center">
             <a href="#link-categoria-2">
-                <img src="https://via.placeholder.com/150/FF146E/FFFFFF?Text=Cat+2" alt="Categoría 2">
-                <p class="category-name mt-2">Cuidado Personal</p>
+                <img src="https://drotafarma.com.ve/wp-content/uploads/2023/12/logo.png" alt="Categoría 2">
+                <p class="category-name mt-2">Drotafarma</p>
             </a>
         </div>
         <div class="category-item text-center">
