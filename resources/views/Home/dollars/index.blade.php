@@ -229,7 +229,7 @@
     <div class="owl-carousel categories-owl-carousel">
         <div class="category-item text-center">
             <a href="#link-categoria-1"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy1L0KksDyj5KhIrjBZeXi3iTjM4TwyoEsMw&s" alt="Categoría 1">
-                <p class="category-name mt-2">Medicina General</p>
+                <p class="category-name mt-2">Calox</p>
             </a>
         </div>
         <div class="category-item text-center">
