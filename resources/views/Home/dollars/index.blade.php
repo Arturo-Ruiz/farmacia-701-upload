@@ -239,27 +239,25 @@
             </a>
         </div>
         <div class="category-item text-center">
-            <a href="#link-categoria-3">
-                <img src="https://via.placeholder.com/150/6DC72E/FFFFFF?Text=Cat+3" alt="Categoría 3">
-                <p class="category-name mt-2">Vitaminas</p>
+            <a href="#link-categoria-1"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy1L0KksDyj5KhIrjBZeXi3iTjM4TwyoEsMw&s" alt="Categoría 1">
+                <p class="category-name mt-2">Calox</p>
             </a>
         </div>
         <div class="category-item text-center">
-            <a href="#link-categoria-4">
-                <img src="https://via.placeholder.com/150/FFA207/FFFFFF?Text=Cat+4" alt="Categoría 4">
-                <p class="category-name mt-2">Bebés y Maternidad</p>
+            <a href="#link-categoria-2">
+                <img src="https://www.drogueriaits2015.com.ve/app_img/aliados/COFASA.png" alt="Categoría 2">
+                <p class="category-name mt-2">Cofasa</p>
             </a>
         </div>
         <div class="category-item text-center">
-            <a href="#link-categoria-5">
-                <img src="https://via.placeholder.com/150/8304F3/FFFFFF?Text=Cat+5" alt="Categoría 5">
-                <p class="category-name mt-2">Dermocosmética</p>
+            <a href="#link-categoria-1"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy1L0KksDyj5KhIrjBZeXi3iTjM4TwyoEsMw&s" alt="Categoría 1">
+                <p class="category-name mt-2">Calox</p>
             </a>
         </div>
         <div class="category-item text-center">
-            <a href="#link-categoria-6">
-                <img src="https://via.placeholder.com/150/333333/FFFFFF?Text=Cat+6" alt="Categoría 6">
-                <p class="category-name mt-2">Equipos Médicos</p>
+            <a href="#link-categoria-2">
+                <img src="https://www.drogueriaits2015.com.ve/app_img/aliados/COFASA.png" alt="Categoría 2">
+                <p class="category-name mt-2">Cofasa</p>
             </a>
         </div>
     </div>
