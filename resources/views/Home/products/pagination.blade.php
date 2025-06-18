@@ -28,7 +28,7 @@
                     </div>
                     <div class="d-flex justify-content-center fw-bold price ">
                         <p class="card-text table_cell">Bs. </p>
-                        <p class="card-text table_cell">{{ number_format($product->price * $dayrate->value, 2, '.', ',') }}</p>
+                        <p class="card-text table_cell">{{ number_format($product->price * $dayrate->value, 2, '.', '') }}</p>
                     </div>
                     <a class="d-flex justify-content-center btn btn-primary text-align-center d-block">Agregar</a>
                     <div class=" d-flex justify-content-center">
